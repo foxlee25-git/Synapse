@@ -1,15 +1,16 @@
 :root {
   color-scheme: light;
-  --bg: #f3f2ee;
-  --surface: rgba(255, 255, 255, 0.82);
-  --surface-solid: #fcfbf8;
-  --surface-muted: #f1efe9;
-  --ink-strong: #111717;
-  --ink-soft: rgba(17, 23, 23, 0.72);
-  --line: rgba(17, 23, 23, 0.08);
-  --line-strong: rgba(17, 23, 23, 0.14);
-  --gold-soft: #c9ab72;
-  --navy-deep: #11181d;
+  --bg: #edf1f7;
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-solid: #f9fbfe;
+  --surface-muted: #eef3f8;
+  --ink-strong: #0f1722;
+  --ink-soft: rgba(15, 23, 34, 0.7);
+  --line: rgba(15, 23, 34, 0.08);
+  --line-strong: rgba(15, 23, 34, 0.14);
+  --accent-soft: #5c87ff;
+  --accent-bright: #7ab8ff;
+  --navy-deep: #0b1220;
 }
 
 * {
@@ -24,8 +25,9 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at top, rgba(201, 171, 114, 0.08), transparent 28%),
-    linear-gradient(180deg, #f6f4ef 0%, var(--bg) 100%);
+    radial-gradient(circle at top, rgba(92, 135, 255, 0.12), transparent 26%),
+    radial-gradient(circle at right top, rgba(122, 184, 255, 0.08), transparent 22%),
+    linear-gradient(180deg, #f5f8fd 0%, var(--bg) 100%);
   color: var(--ink-strong);
 }
 
@@ -54,7 +56,7 @@ footer .mx-auto {
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.74);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--line);
@@ -106,10 +108,10 @@ footer .mx-auto {
 }
 
 .illustration-shell {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    linear-gradient(180deg, rgba(122, 184, 255, 0.08), rgba(255, 255, 255, 0.02));
   padding: 1rem;
 }
 
@@ -219,7 +221,7 @@ footer .mx-auto {
 }
 
 .card-index {
-  color: var(--gold-soft);
+  color: var(--accent-soft);
 }
 
 .service-card h3,
@@ -252,12 +254,13 @@ footer .mx-auto {
 .contact-card.dark,
 .cta-band {
   background:
-    radial-gradient(circle at top right, rgba(201, 171, 114, 0.12), transparent 30%),
-    linear-gradient(180deg, #12181d 0%, var(--navy-deep) 100%);
+    radial-gradient(circle at top right, rgba(92, 135, 255, 0.18), transparent 30%),
+    radial-gradient(circle at left bottom, rgba(122, 184, 255, 0.1), transparent 24%),
+    linear-gradient(180deg, #0e1729 0%, var(--navy-deep) 100%);
 }
 
 .feature-panel.light {
-  background: linear-gradient(180deg, rgba(250,248,243,0.98), rgba(241,239,233,0.98));
+  background: linear-gradient(180deg, rgba(250,252,255,0.98), rgba(238,243,248,0.98));
   border: 1px solid var(--line);
 }
 
@@ -268,7 +271,7 @@ footer .mx-auto {
 }
 
 .use-case-card span {
-  color: var(--gold-soft);
+  color: var(--accent-soft);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.85rem;
@@ -277,7 +280,7 @@ footer .mx-auto {
 .case-metric {
   font-size: 2.6rem;
   line-height: 1;
-  color: var(--gold-soft);
+  color: var(--accent-soft);
 }
 
 .pricing-tier {
@@ -298,9 +301,9 @@ footer .mx-auto {
 
 .pricing-card.featured {
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,247,241,0.98));
-  border-color: rgba(201, 171, 114, 0.28);
-  box-shadow: 0 22px 50px rgba(17, 23, 23, 0.07);
+    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(243,247,255,0.98));
+  border-color: rgba(92, 135, 255, 0.24);
+  box-shadow: 0 22px 50px rgba(15, 23, 34, 0.08);
 }
 
 .cta-band {
@@ -339,8 +342,8 @@ footer .mx-auto {
 .form-field input:focus,
 .form-field select:focus,
 .form-field textarea:focus {
-  border-color: rgba(27, 91, 74, 0.48);
-  box-shadow: 0 0 0 4px rgba(27, 91, 74, 0.12);
+  border-color: rgba(92, 135, 255, 0.48);
+  box-shadow: 0 0 0 4px rgba(92, 135, 255, 0.12);
 }
 
 .form-field input::placeholder,
