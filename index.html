@@ -386,10 +386,17 @@
         <article class="pricing-card">
           <div class="plan-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
-              <rect x="10" y="10" width="44" height="44" rx="18" fill="#eef4ff"/>
-              <path d="M32 18L44 25V39L32 46L20 39V25L32 18Z" fill="#5c87ff" fill-opacity="0.12" stroke="#5c87ff" stroke-width="2.6" stroke-linejoin="round"/>
-              <path d="M32 24L38 27.5V34.5L32 38L26 34.5V27.5L32 24Z" fill="#5c87ff"/>
-              <path d="M32 18V24M44 25L38 27.5M20 25L26 27.5M32 46V38" stroke="#9bc7ff" stroke-width="2.2" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="starterFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#bfe0ff"/>
+                  <stop offset="100%" stop-color="#5c87ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="44" height="44" rx="18" fill="#f4f8ff"/>
+              <path d="M20 28L32 18L44 28L32 38L20 28Z" fill="none" stroke="url(#starterFrame)" stroke-width="2.6" stroke-linejoin="round"/>
+              <path d="M20 36L32 26L44 36L32 46L20 36Z" fill="#5c87ff" fill-opacity="0.12" stroke="#7ab8ff" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M32 18V46" stroke="#cfe5ff" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="32" cy="32" r="4.5" fill="#5c87ff"/>
             </svg>
           </div>
           <p class="pricing-tier">Starter</p>
@@ -404,11 +411,17 @@
         <article class="pricing-card featured">
           <div class="plan-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
-              <rect x="10" y="10" width="44" height="44" rx="18" fill="#eef4ff"/>
-              <path d="M22 38C22 29.5 28 23 36 23C41.5 23 46 26.5 47.5 31.5" fill="none" stroke="#5c87ff" stroke-width="2.8" stroke-linecap="round"/>
-              <path d="M20 42H44" stroke="#9bc7ff" stroke-width="2.6" stroke-linecap="round"/>
-              <path d="M28 42V33M36 42V27M44 42V20" stroke="#5c87ff" stroke-width="3.2" stroke-linecap="round"/>
-              <circle cx="44" cy="20" r="3.5" fill="#7ab8ff"/>
+              <defs>
+                <linearGradient id="growthArc" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#7ab8ff"/>
+                  <stop offset="100%" stop-color="#5c87ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="44" height="44" rx="18" fill="#f4f8ff"/>
+              <path d="M19 39C22 30 29 24 38 22C41.5 21.2 45 21.6 48 23.2" fill="none" stroke="url(#growthArc)" stroke-width="3" stroke-linecap="round"/>
+              <path d="M22 42H46" stroke="#d2e6ff" stroke-width="2.6" stroke-linecap="round"/>
+              <path d="M24 42L30 34L36 37L44 24" fill="none" stroke="#5c87ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="44" cy="24" r="4" fill="#5c87ff"/>
             </svg>
           </div>
           <p class="pricing-tier">Growth</p>
@@ -423,11 +436,21 @@
         <article class="pricing-card">
           <div class="plan-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
-              <rect x="10" y="10" width="44" height="44" rx="18" fill="#eef4ff"/>
-              <circle cx="32" cy="32" r="7.5" fill="#5c87ff"/>
-              <path d="M32 16V22M32 42V48M48 32H42M22 32H16" stroke="#5c87ff" stroke-width="2.8" stroke-linecap="round"/>
-              <path d="M43 21L38.5 25.5M25.5 38.5L21 43M43 43L38.5 38.5M25.5 25.5L21 21" stroke="#9bc7ff" stroke-width="2.4" stroke-linecap="round"/>
-              <circle cx="32" cy="32" r="14" fill="none" stroke="#9bc7ff" stroke-width="2"/>
+              <defs>
+                <linearGradient id="enterpriseRing" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#d8edff"/>
+                  <stop offset="100%" stop-color="#5c87ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="44" height="44" rx="18" fill="#f4f8ff"/>
+              <circle cx="32" cy="32" r="5" fill="#5c87ff"/>
+              <circle cx="32" cy="32" r="12.5" fill="none" stroke="url(#enterpriseRing)" stroke-width="2.4"/>
+              <circle cx="32" cy="32" r="18" fill="none" stroke="#d9ebff" stroke-width="1.8"/>
+              <circle cx="32" cy="14" r="3.2" fill="#7ab8ff"/>
+              <circle cx="50" cy="32" r="3.2" fill="#7ab8ff"/>
+              <circle cx="32" cy="50" r="3.2" fill="#7ab8ff"/>
+              <circle cx="14" cy="32" r="3.2" fill="#7ab8ff"/>
+              <path d="M32 19V27M45 32H37M32 45V37M19 32H27" stroke="#9bc7ff" stroke-width="2.2" stroke-linecap="round"/>
             </svg>
           </div>
           <p class="pricing-tier">Enterprise</p>
