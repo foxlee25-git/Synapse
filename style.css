@@ -300,8 +300,31 @@ body {
 }
 
 @media (max-width: 640px) {
+  body {
+    background: #f8f8f6;
+  }
+
+  header .mx-auto,
+  main section,
+  footer .mx-auto {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  header .mx-auto {
+    padding-top: 1rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  main section {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
   .glass-panel {
     border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .showcase-card,
@@ -321,15 +344,82 @@ body {
   .case-card,
   .pricing-card,
   .contact-card {
-    padding: 1.5rem;
+    padding: 1.15rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .section-copy,
+  .service-card p,
+  .service-card strong,
+  .use-case-card p,
+  .case-copy,
+  .pricing-card p,
+  .pricing-card li,
+  .metric-card p,
+  .form-field span,
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 0.95rem;
   }
 
   .metric-card {
+    padding: 1rem;
+    border-radius: 0.9rem;
+  }
+
+  .metric-card span,
+  .case-metric {
+    font-size: 2rem;
+  }
+
+  .hero-stack {
+    gap: 0.85rem;
+  }
+
+  .hero-stack .showcase-card:last-child {
+    display: none;
+  }
+
+  .service-card h3,
+  .use-case-card h3,
+  .case-card h3,
+  .pricing-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .use-case-card {
+    min-height: auto;
     padding: 1.15rem;
+  }
+
+  .feature-panel {
+    padding: 1.25rem;
+  }
+
+  .feature-panel .rounded-\[1\.5rem\],
+  .contact-card .rounded-\[1\.5rem\] {
+    border-radius: 0.85rem;
+    padding: 1rem;
+  }
+
+  .cta-band {
+    padding: 1.5rem 1.15rem;
+    gap: 1rem;
+  }
+
+  .cta-band h2 {
+    font-size: 1.7rem;
+    line-height: 1.12;
+  }
+
+  .pricing-card.featured {
+    border-width: 1px;
   }
 
   .metric-card p,
@@ -341,5 +431,21 @@ body {
   .pricing-card p,
   .pricing-card li {
     line-height: 1.65;
+  }
+
+  .form-field {
+    gap: 0.5rem;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    padding: 0.9rem 1rem;
+    border-radius: 0.8rem;
+  }
+
+  #mobileMenu {
+    margin-top: 0.75rem;
+    padding: 1rem;
   }
 }
