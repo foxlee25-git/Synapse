@@ -386,8 +386,19 @@
         <article class="pricing-card">
           <div class="plan-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
-              <rect x="12" y="12" width="40" height="40" rx="14" fill="#dce8ff"/>
-              <path d="M24 34L30 40L42 26" fill="none" stroke="#5c87ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="starterGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8ec5ff"/>
+                  <stop offset="100%" stop-color="#5c87ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="44" height="44" rx="18" fill="#eef4ff"/>
+              <rect x="18" y="18" width="28" height="28" rx="12" fill="none" stroke="url(#starterGlow)" stroke-width="3"/>
+              <circle cx="24" cy="24" r="3" fill="#5c87ff"/>
+              <circle cx="40" cy="24" r="3" fill="#7ab8ff"/>
+              <circle cx="24" cy="40" r="3" fill="#7ab8ff"/>
+              <circle cx="40" cy="40" r="3" fill="#5c87ff"/>
+              <path d="M27 27L37 37M37 27L27 37" stroke="#d8e6ff" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
           </div>
           <p class="pricing-tier">Starter</p>
@@ -402,8 +413,18 @@
         <article class="pricing-card featured">
           <div class="plan-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
-              <rect x="12" y="12" width="40" height="40" rx="14" fill="#dce8ff"/>
-              <path d="M22 40L32 22L42 40" fill="none" stroke="#5c87ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="growthGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#9ad5ff"/>
+                  <stop offset="100%" stop-color="#4e79ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="44" height="44" rx="18" fill="#eef4ff"/>
+              <path d="M20 38C20 28 27 20 36 20C42 20 46 23 48 28C49 30 49 34 48 38" fill="none" stroke="url(#growthGlow)" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M24 40H40" stroke="#5c87ff" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M36 20V14" stroke="#7ab8ff" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="24" cy="40" r="3.5" fill="#5c87ff"/>
+              <circle cx="40" cy="40" r="3.5" fill="#7ab8ff"/>
             </svg>
           </div>
           <p class="pricing-tier">Growth</p>
@@ -418,9 +439,16 @@
         <article class="pricing-card">
           <div class="plan-icon">
             <svg viewBox="0 0 64 64" aria-hidden="true">
-              <rect x="12" y="12" width="40" height="40" rx="14" fill="#dce8ff"/>
-              <circle cx="32" cy="32" r="10" fill="none" stroke="#5c87ff" stroke-width="4"/>
-              <path d="M32 18V12M32 52V46M46 32H52M12 32H18" stroke="#5c87ff" stroke-width="4" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="enterpriseGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a8dcff"/>
+                  <stop offset="100%" stop-color="#5c87ff"/>
+                </linearGradient>
+              </defs>
+              <rect x="10" y="10" width="44" height="44" rx="18" fill="#eef4ff"/>
+              <circle cx="32" cy="32" r="10" fill="none" stroke="url(#enterpriseGlow)" stroke-width="3.5"/>
+              <circle cx="32" cy="32" r="3.5" fill="#5c87ff"/>
+              <path d="M32 18V14M32 50V46M46 32H50M14 32H18M42 22L45 19M19 45L22 42M22 22L19 19M42 42L45 45" stroke="#7ab8ff" stroke-width="2.8" stroke-linecap="round"/>
             </svg>
           </div>
           <p class="pricing-tier">Enterprise</p>
