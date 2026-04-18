@@ -79,6 +79,11 @@ footer .mx-auto {
   gap: 1rem;
 }
 
+.section-heading + .grid,
+.section-heading + .space-y-4 {
+  margin-top: 2rem !important;
+}
+
 .illustration-shell,
 .feature-illustration,
 .mini-illustration {
@@ -355,8 +360,8 @@ footer .mx-auto {
   }
 
   main section {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
+    padding-top: 4.25rem !important;
+    padding-bottom: 4.25rem !important;
   }
 
   .illustration-shell {
@@ -395,8 +400,8 @@ footer .mx-auto {
   }
 
   main section {
-    padding-top: 3.5rem !important;
-    padding-bottom: 3.5rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
   }
 
   .glass-panel {
