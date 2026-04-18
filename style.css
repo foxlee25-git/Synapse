@@ -79,6 +79,51 @@ footer .mx-auto {
   gap: 1rem;
 }
 
+.illustration-shell,
+.feature-illustration,
+.mini-illustration {
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration-shell {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1rem;
+}
+
+.illustration-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mini-illustration {
+  width: 7rem;
+  margin-bottom: 0.35rem;
+}
+
+.mini-illustration-case {
+  margin-bottom: 0.85rem;
+}
+
+.feature-illustration {
+  border-radius: 1rem;
+}
+
+.feature-illustration.dark {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.9rem;
+}
+
+.feature-illustration.light {
+  border: 1px solid rgba(14, 26, 31, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.9rem;
+}
+
 .showcase-card,
 .service-card,
 .feature-panel,
@@ -313,6 +358,10 @@ footer .mx-auto {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
   }
+
+  .illustration-shell {
+    padding: 1.15rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -413,6 +462,17 @@ footer .mx-auto {
 
   .hero-stack .showcase-card:last-child {
     display: none;
+  }
+
+  .mini-illustration {
+    width: 5.25rem;
+  }
+
+  .illustration-shell,
+  .feature-illustration.dark,
+  .feature-illustration.light {
+    padding: 0.75rem;
+    border-radius: 0.85rem;
   }
 
   .service-card h3,
