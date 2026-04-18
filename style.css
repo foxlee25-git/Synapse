@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background: #f7f8f6;
+  color: #0e1a1f;
 }
 
 .site-bg {
@@ -33,6 +34,13 @@ body {
   box-shadow: 0 12px 32px rgba(14, 26, 31, 0.04);
 }
 
+header .mx-auto,
+main section,
+footer .mx-auto {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
 .glass-panel {
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid rgba(14, 26, 31, 0.08);
@@ -48,27 +56,27 @@ body {
 }
 
 .section-heading {
-  max-width: 48rem;
+  max-width: 42rem;
 }
 
 .section-title {
   margin: 0.75rem 0 0;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(2.2rem, 3vw, 3.5rem);
-  line-height: 1.05;
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  line-height: 1.08;
   letter-spacing: -0.04em;
 }
 
 .section-copy {
   margin: 1rem 0 0;
-  font-size: 1.05rem;
-  line-height: 1.9;
+  font-size: 1rem;
+  line-height: 1.75;
   color: rgba(34, 52, 61, 0.8);
 }
 
 .hero-stack {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .showcase-card,
@@ -84,7 +92,7 @@ body {
 }
 
 .showcase-card {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .showcase-card::after,
@@ -98,19 +106,20 @@ body {
   border: 1px solid rgba(14, 26, 31, 0.08);
   border-radius: 1rem;
   background: #ffffff;
-  padding: 1.4rem;
+  padding: 1.15rem;
 }
 
 .metric-card span {
   display: block;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.35rem;
   font-weight: 700;
 }
 
 .metric-card p {
-  margin: 0.75rem 0 0;
-  line-height: 1.7;
+  margin: 0.55rem 0 0;
+  line-height: 1.55;
+  font-size: 0.95rem;
   color: rgba(34, 52, 61, 0.78);
 }
 
@@ -127,7 +136,7 @@ body {
 .case-card,
 .pricing-card,
 .contact-card {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .service-card strong {
@@ -152,10 +161,10 @@ body {
 .use-case-card h3,
 .case-card h3,
 .pricing-card h3 {
-  margin: 1.1rem 0 0;
+  margin: 0.85rem 0 0;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.7rem;
-  line-height: 1.15;
+  font-size: 1.35rem;
+  line-height: 1.2;
 }
 
 .service-card p,
@@ -165,13 +174,13 @@ body {
 .pricing-card p,
 .pricing-card li {
   display: block;
-  margin-top: 1rem;
-  line-height: 1.8;
+  margin-top: 0.8rem;
+  line-height: 1.65;
   color: rgba(34, 52, 61, 0.8);
 }
 
 .feature-panel {
-  padding: 2.25rem;
+  padding: 1.75rem;
 }
 
 .feature-panel.dark,
@@ -186,8 +195,8 @@ body {
 }
 
 .use-case-card {
-  padding: 2rem;
-  min-height: 18rem;
+  padding: 1.5rem;
+  min-height: 14rem;
   background: #ffffff;
 }
 
@@ -199,7 +208,7 @@ body {
 }
 
 .case-metric {
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   line-height: 1;
   color: #ff6b3d;
 }
@@ -212,7 +221,7 @@ body {
 }
 
 .pricing-card ul {
-  margin: 1.25rem 0 0;
+  margin: 1rem 0 0;
   padding-left: 1.1rem;
 }
 
@@ -230,7 +239,7 @@ body {
   gap: 1.5rem;
   align-items: center;
   border-radius: 1.25rem;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .form-field {
@@ -286,10 +295,30 @@ body {
   transform: translateY(0);
 }
 
+@media (min-width: 1025px) {
+  .desktop-secondary-showcase {
+    display: none;
+  }
+
+  nav.glass-panel {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  #top .metric-card {
+    min-height: 100%;
+  }
+
+  main section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
 @media (min-width: 768px) {
   .cta-band {
-    grid-template-columns: 1.3fr auto;
-    padding: 3rem;
+    grid-template-columns: 1.2fr auto;
+    padding: 2.5rem;
   }
 }
 
