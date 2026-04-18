@@ -5,15 +5,15 @@ const formMessage = document.querySelector("#formMessage");
 const siteConfig = window.SITE_CONFIG || {};
 
 document.querySelectorAll("[data-site-brand-name]").forEach((element) => {
-  element.textContent = siteConfig.brandName || "Northstar AI";
+  element.textContent = siteConfig.brandName || "Synapse";
 });
 
 document.querySelectorAll("[data-site-brand-short]").forEach((element) => {
-  element.textContent = siteConfig.brandShort || "NA";
+  element.textContent = siteConfig.brandShort || "S";
 });
 
 document.querySelectorAll("[data-site-company-name]").forEach((element) => {
-  element.textContent = siteConfig.companyName || "Northstar AI Consulting";
+  element.textContent = siteConfig.companyName || "Synapse";
 });
 
 document.querySelectorAll("[data-site-tagline]").forEach((element) => {
